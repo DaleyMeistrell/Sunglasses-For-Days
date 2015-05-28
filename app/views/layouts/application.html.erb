@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunglasses For Days</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="welcome">
+		  	<div class="col-md-12 welcome">
+		  		<div class="space"></div>
+		  		
+		  		<%#=image_tag("HogwartsCrest.png", class: "hogwarts")%>
+		  	</div>
+		</div>
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <ul class="navbar">
+		      <li class="header">Home</li>
+		      <li class="header">About Us</li>
+		      <li class="header">Products</li>
+		      <li class="header">Login</li>
+		      <li class="header">Sign Up</li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+<%= yield %>
+
+</body>
+</html>
